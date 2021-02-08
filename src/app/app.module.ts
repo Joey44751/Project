@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PlaygroundComponent } from './playground/playground.component';
+import { IndoorPlaygroundComponent } from './indoor-playground/indoor-playground.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlaygroundComponent
+    PlaygroundComponent,
+    IndoorPlaygroundComponent
   ],
   imports: [
     BrowserModule
