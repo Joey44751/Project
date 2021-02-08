@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+/* Standard text styles */
+h2{
+    color: #5f6d54;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+h3{
+    color: #DBE1D1;
+    font-family: 'Rubik', sans-serif;
+    font: weight 300;
+}
+p{
+    text-align: justify;
+}
+hr{
+    background-color: #e67383
+}
+/* general page styles */
+.d-block{
+    height: 400px;
+}
+.balk{
+    padding: 40px;
+    min-height: 70px;
+    padding: 5px;
+    background-color: #e67383;
+    vertical-align: middle
+}
+.icon{
+    height: auto;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.medium{
+    width: 60px;
+}
+.medium:hover{
+    width: 80px;
+}
+.bi {
+    color:  #DBE1D1;
+    width: 25px;
+    height: 25px;
+    
+}
+/* Comment section */
+.panel {
+    /* box-shadow: 0 2px 0 rgba(0,0,0,0.075); */
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
+    padding: 5px 10px !important;
+}
+
+.mar-top {
+    margin-top: 15px;
+}
+.btn{
+    background-color: #e67383 !important;
+    border-color: #EB9782 !important;
+    color: #DBE1D1 !important;
+}
+.fa{
+    background-color: white !important;
+    border-color: white !important;
+}
+/* Map css */
+.map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+.map-container-2 iframe{
+      left:0;
+    top:0;
+    /* height:100%;
+    width:100%; */
+    position:absolute;
+    }
+/* navbar */
+.navbar-nav{
+    margin-left:auto !important;
+    margin-right: auto !important;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
