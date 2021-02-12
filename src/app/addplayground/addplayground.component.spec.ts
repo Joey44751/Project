@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IndoorPlaygroundComponent } from './indoor-playground.component';
+import { AddplaygroundComponent } from './addplayground.component';
 
-describe('IndoorPlaygroundComponent', () => {
-  let component: IndoorPlaygroundComponent;
-  let fixture: ComponentFixture<IndoorPlaygroundComponent>;
+describe('AddplaygroundComponent', () => {
+  let component: AddplaygroundComponent;
+  let fixture: ComponentFixture<AddplaygroundComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IndoorPlaygroundComponent ]
+      declarations: [ AddplaygroundComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IndoorPlaygroundComponent);
+    fixture = TestBed.createComponent(AddplaygroundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
