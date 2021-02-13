@@ -1,0 +1,30 @@
+.selection{
+    width: 100px;
+    margin-right: 50px;
+}
+.radio_selection{
+    display: none !important;
+    }
+    
+    .label_selection {
+    opacity: 0.3;
+    width: 40px !important;
+    height: auto !important;
+    }
+    
+    .radio_selection:checked + label {
+    opacity: 1;
+    }
+    .radioimg{
+    width: 100px !important;
+    height: auto !important;
+    margin-right: 50px !important;
+    }
+
+      /* Show button information  */
+      #checkfree {
+        display: none
+      }
+      input#price1:checked ~ #checkfree {
+        display: inline-block
+      }

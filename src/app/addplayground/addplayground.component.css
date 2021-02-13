@@ -162,7 +162,12 @@
         input#price4:checked ~ #checkexpensive {
           display: inline-block
         }
-
+        #checkAdult {
+          display: none
+        }
+        input#price5:checked ~ #checkAdult {
+          display: inline-block
+        }
 
 /* general information buttens  */
   #checkfnb {
@@ -177,6 +182,12 @@
     input#fnbNear:checked ~ #checkfnbNear {
     display: inline-block
     }
+    #checkfnbPickNick {
+      display: none
+      }
+      input#pickNick:checked ~ #checkfnbPickNick {
+      display: inline-block
+      }
   #checkWc {
   display: none
       }
@@ -201,19 +212,16 @@
       input#forest:checked ~ #checkForest {
       display: inline-block
       }
-/* .addPlayground {
-    background-color: #EB9782 !important;
-    min-height: 75px;
-    width: 200px;
-    border-radius:5%;
-} */
+
+/* Buttten add playground styling */
+
 .addPlayground{
  font-size: 100px;
- text-align: center;
+ padding: 0%;
 }
 .addPlayground:hover{
   opacity: 0.3;
-  text-align: center;
+
 }
 #toevoegen{
   display: none;

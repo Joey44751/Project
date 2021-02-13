@@ -17,7 +17,7 @@
                             <a class="nav-link" href="#">speeltuinen</a>
                             <a class="nav-link" href="#">Indoor speeltuinen</a>
                             <a class="nav-link" href="#">Horeca</a>
-                            <a class="nav-link" href="#">tochten</a>
+                            <a class="nav-link" href="#">Tochten</a>
                             <a class="nav-link" href="#">Atractieparken</a>
                             <a class="nav-link" href="#">Musea</a>
                             <a class="nav-link" href="#">Activiteiten</a>
@@ -88,7 +88,7 @@
                             <div class="input-group input-group-sm mb-3">
                                 <!-- street -->
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Straat</span>
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">straat</span>
                                 </div>
                                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
@@ -112,7 +112,15 @@
                             <div class="input-group input-group-sm mb-3">
                                 <!-- Postal code -->
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Postcode</span>
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">postcode</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <!-- Website -->
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">website</span>
                                 </div>
                                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
@@ -138,7 +146,7 @@
                         <div class="col-md-12">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text">Korte omschrijving</span>
+                                  <span class="input-group-text">korte omschrijving</span>
                                 </div>
                                 <textarea class="form-control" aria-label="With textarea"></textarea>
                               </div>
@@ -150,6 +158,7 @@
                         <div class="col-md-4 mt-2">
                             <br>
                             <h4>Grote van de speeltuin</h4>
+                            <hr>
                           
                             <!--small-->
                             <input type="radio" class="radio_item" value=""  name="item" id="radio1">
@@ -168,7 +177,7 @@
                              <label class="label_item" for="radio4"> <img src="assets/img/sizeXl.png" class="radioimg" > </label>
 
                             <br>
-                            <!-- explantory text -->
+                            <!-- Icon information, shown when selected -->
                             <div id="checksmall"><p class="info">minder dan 5 speeltoestellen</p></div>
                             <div id="checkmedium"><p class="info">tussen 5 en 15 speeltoestellen</p></div> 
                             <div id="checklarge"><p class="info">tussen 15 en 25 speeltoestellen</p></div> 
@@ -179,7 +188,8 @@
                         <div class="col-md-4 mt-2">
                             <br>
                             <h4>Voor leeftijd</h4>
-                          
+                            <hr>
+
                             <!--age 0 - 3-->
                             <input type="checkbox" class="radio_age" value=""  name="age" id="age1">
                             <label class="label_age" for="age1"> <img src="assets/img/age03.png" class="radioimg" > </label>
@@ -197,7 +207,7 @@
                              <label class="label_age" for="age4"> <img src="assets/img/age912.png" class="radioimg" > </label>
 
                             <br>
-                            <!-- explantory text -->
+                            <!-- Icon information, shown when selected -->
                             <div id="check03"><p class="info">kinderen van 0-3 jaar</p></div>
                             <div id="check36"><p class="info">kinderen van 3-6 jaar</p></div> 
                             <div id="check69"><p class="info">kinderen van 6-9 jaar</p></div> 
@@ -208,7 +218,8 @@
                         <div class="col-md-4 mt-2">
                             <br>
                             <h4>entreegeld</h4>
-                          
+                            <hr>
+
                             <!--Free-->
                             <input type="radio" class="radio_price" value=""  name="price" id="price1">
                             <label class="label_price" for="price1"> <img src="assets/img/free.png" class="radioimg" > </label>
@@ -225,25 +236,35 @@
                              <input type="radio" class="radio_price" value="" name="price" id="price4">
                              <label class="label_price" for="price4"> <img src="assets/img/priceExpensive.png" class="radioimg" > </label>
 
+                              <!--Adults mus pay-->
+                              <input type="checkbox" class="radio_age" value="" name="pricead" id="price5">
+                              <label class="label_age" for="price5"> <img src="assets/img/priceAdult.png" class="radioimg" > </label>
+
                             <br>
-                            <!-- explantory text -->
-                            <div id="checkfree"><p class="info">Gratis</p></div>
+                            <!-- Icon information, shown when selected -->
+                            <div id="checkfree"><p class="info">gratis</p></div> <br>
                             <div id="checkcheap"><p class="info">minder dan €5 /kind</p></div> 
                             <div id="checknormal"><p class="info">tussen €5-€10 /kind </p></div> 
-                            <div id="checkexpensive"><p class="info">meer dan €10 /kind</p></div>  
+                            <div id="checkexpensive"><p class="info">meer dan €10 /kind</p></div> 
+                            <div id="checkAdult"><p class="info">Volwassenen betalend</p></div>  
                         </div>
                     
                     </div>
                     <!-- general information -->
-                    <div class="row">
+                    <div class="row mt-4">
                         <div class="col-md-5">
                             <h4>Algemene informatie</h4>
+                            <hr>
+
                             <!-- Food and beverage -->
                             <input type="checkbox" class="radio_price" value="" name="fnb" id="fnb">
                             <label class="label_price" for="fnb"> <img src="assets/img/fnb.png" class="radioimg" > </label>
                             <!-- Food and beverage near -->
                             <input type="checkbox" class="radio_price" value="" name="fnbNear" id="fnbNear">
                             <label class="label_price" for="fnbNear"> <img src="assets/img/fnbNear.png" class="radioimg" > </label>
+                            <!-- Picknick possible -->
+                            <input type="checkbox" class="radio_price" value="" name="pickNick" id="pickNick">
+                            <label class="label_price" for="pickNick"> <img src="assets/img/fnbPickNick.png" class="radioimg" > </label>
                             <!-- Toilet present -->
                             <input type="checkbox" class="radio_price" value="" name="wc" id="wc">
                             <label class="label_price" for="wc"> <img src="assets/img/wc.png" class="radioimg" > </label>
@@ -257,8 +278,10 @@
                             <input type="checkbox" class="radio_price" value="" name="forest" id="forest">
                             <label class="label_price" for="forest"> <img src="assets/img/lsForest.png" class="radioimg" > </label>
                             <br>
+                            <!-- Icon information, shown when selected -->
                             <div id="checkfnb"><p class="info">Eten en drinken ter plaatse </p></div>
                             <div id="checkfnbNear"><p class="info"> / eten en drinken dichtbij locatie </p></div> 
+                            <div id="checkfnbPickNick"><p class="info"> / Picknick toegelaten</p></div> 
                             <div id="checkWc"><p class="info"> / WC aanwezig </p></div> <br>
                             <div id="checkCity"><p class="info"> / In een stedelijke omgeving </p></div> 
                             <div id="checkField"><p class="info"> / In een landelijke omgeving </p></div>  
@@ -269,9 +292,48 @@
                     </div>
                     <hr>
                     <div class="row">
+                        <div class="col-md-6">
+                               <!-- <div class="container mt-5"> -->
+                                <h3 class=""><i class="bi bi-card-list"></i> Voeg menu toe</h3>
+                                <!-- <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4"> -->
+                                    <form method="post" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <!-- <label><strong>Upload Files</strong></label> -->
+                                            <div class="custom-file">
+                                                <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Kies bestand</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="button" name="upload" value="upload" id="upload" class="btn btn-block btn-dark"><i
+                                                    class="fa fa-fw fa-upload"></i> Upload</button>
+                                        </div>
+                                    </form>
+                         </div>
+                         <div class="col-md-6">
+                            <!-- <div class="container mt-5"> -->
+                             <h3 class=""><i class="bi bi-map-fill"></i> Voeg plan toe</h3>
+                             <!-- <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4"> -->
+                                 <form method="post" enctype="multipart/form-data">
+                                     <div class="form-group">
+                                         <!-- <label><strong>Upload Files</strong></label> -->
+                                         <div class="custom-file">
+                                             <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
+                                             <label class="custom-file-label" for="customFile">Kies bestand</label>
+                                         </div>
+                                     </div>
+                                     <div class="form-group">
+                                         <button type="button" name="upload" value="upload" id="upload" class="btn btn-block btn-dark"><i
+                                                 class="fa fa-fw fa-upload"></i> Upload</button>
+                                     </div>
+                                 </form>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
                         <div class="col-md-12">
                                <!-- <div class="container mt-5"> -->
-                                <h3 class="">Voeg foto's toe</h3>
+                                <h3 class=""><i class="bi bi-image"></i> Voeg foto's toe</h3>
                                 <!-- <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4"> -->
                                     <form method="post" enctype="multipart/form-data">
                                         <div class="form-group">
@@ -293,18 +355,16 @@
                  </div>
         <div class="col-md-3"></div>
     </div>
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 p-4 d-flex justify-content-center">
-                <div>
-                    <i class="bi bi-plus-circle-fill addPlayground"></i>
-                    <div id="toevoegen"><h3>Toevoegen</h3></div>
-                </div>
-            <div class="col-md-1"></div>
-            </div>
+    <!-- add playground button -->
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+                <i class="bi bi-plus-circle-fill addPlayground"></i>
+                <div id="toevoegen"><h3>Toevoegen</h3></div>
         </div>
+        
     </div>
+
+
 
 <!-- Upload images script -->
 <script>
