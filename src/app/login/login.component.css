@@ -1,0 +1,26 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #e67383 !important;
+}
+
+.col-sm-12.border.border.shadow.rounded.pt-2 {
+    border-color: #e67383 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    color: black !important;
+    background-color: #e67383 !important;
+    border-color: #e67383 !important;
+}
+
+.btn-primary {
+    color: black !important;
+    background-color: #e67383 !important;
+    border-color: #e67383 !important;
+}

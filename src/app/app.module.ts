@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PlaygroundComponent } from './playground/playground.component';
 import { AddplaygroundComponent } from './addplayground/addplayground.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { AddplaygroundComponent } from './addplayground/addplayground.component'
     AppComponent,
     PlaygroundComponent,
     AddplaygroundComponent,
+    LoginComponent,
  
   ],
   imports: [
