@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,5 @@ export class AppComponent {
 
   }
   title = 'project-syntra';
+  
 }

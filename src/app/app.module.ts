@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AppRoutingModule } from '../../src/app/app-routing/app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
