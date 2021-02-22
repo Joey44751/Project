@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "syntragip": {
+      "hosting": {
+        "project-syntra": [
+          "syntragip"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "syntragip"
+  }
+}
