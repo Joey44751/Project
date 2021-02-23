@@ -39,7 +39,7 @@ export class AuthService {
         this.ngZone.run(() => {
           this.router.navigate(['/playground']);
         });
-        //this.SetUserData(result.user);
+       // this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
       })
@@ -60,7 +60,7 @@ export class AuthService {
   SendVerificationMail() {
     return this.ngFireAuth.currentUser.then((u: { sendEmailVerification: () => any; }) => u.sendEmailVerification())
     .then(() => {
-      // SHOW VERIFY SCREEN MAYBE? this.router.navigate(['verify-email']);
+     // this.router.navigate(['verify-email']); // TODO
     })
   }
 
