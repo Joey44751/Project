@@ -69,7 +69,7 @@
                 <label><input type="checkbox" name="signupcondition" id="signupcondition" required> I agree with the <a href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
               </div>
               <div class="form-group">
-                <input type="submit" (click)="authService.SignUp(registerEmail.value,registerPass.value)"> name="signupsubmit" value="Sign Up" class="btn btn-block btn-primary" >
+                <input type="submit" (click)="authService.SignUp(registerEmail.value,registerPass.value)" name="signupsubmit" value="Sign Up" class="btn btn-block btn-primary" >
               </div>
             </form>
           </div>
@@ -115,3 +115,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- (click)="authService.LogConsole(emailLogin.value)" for logging -->

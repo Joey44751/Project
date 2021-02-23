@@ -1,5 +1,6 @@
 import { Injectable, NgZone } from '@angular/core';
 import firebase from 'firebase/app';
+import { User } from "../app/user";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
@@ -74,6 +75,10 @@ export class AuthService {
     })
   }
 
+  LogConsole(passwordResetEmail: string) {
+      window.alert(passwordResetEmail);
+  }
+
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
@@ -99,20 +104,20 @@ export class AuthService {
         console.log(error);
     })
   }
-/* 
+
   SetUserData(user: firebase.User | null) {
-    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
+    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user?.uid}`);
     const userData: User = {
-      uid: user.uid,
-      email: user.email,
-      displayName: user.displayName,
-      photoURL: user.photoURL,
-      emailVerified: user.emailVerified
+      uid: user?.uid || '{}',
+      email: user?.email || '{}',
+      displayName: user?.displayName || '{}',
+      photoURL: user?.photoURL || '{}',
+      emailVerified: user?.emailVerified || false
     }
     return userRef.set(userData, {
       merge: true
     })
-  } */
+  } 
 
   // Sign out
   SignOut() {
