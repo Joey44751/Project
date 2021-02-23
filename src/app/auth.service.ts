@@ -11,6 +11,7 @@ import { Router } from "@angular/router";
 export class AuthService {
 
   userData: any;
+  user: any;
   ngFireAuth: any;
 
   constructor(
@@ -93,7 +94,6 @@ export class AuthService {
   AuthLogin(provider: firebase.auth.AuthProvider) {
     return this.afAuth.signInWithPopup(provider)
     .then((result) => {
-       console.log('You have been successfully logged in!');
         this.router.navigate(['/playground']);
     }).catch((error) => {
         console.log(error);
