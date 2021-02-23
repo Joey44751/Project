@@ -40,7 +40,7 @@ export class AuthService {
         this.ngZone.run(() => {
           this.router.navigate(['/playground']);
         });
-       // this.SetUserData(result.user);
+       this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
       })
@@ -48,10 +48,10 @@ export class AuthService {
 
    // Sign up with email/password
    SignUp(email: string, password: string) {
-    return this.afAuth.createUserWithEmailAndPassword(email, password)
+   return this.afAuth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
         this.SendVerificationMail();
-        //this.SetUserData(result.user);
+        this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
       })
@@ -79,7 +79,7 @@ export class AuthService {
       window.alert(passwordResetEmail);
   }
 
-  // Returns true when user is looged in and email is verified
+  // Returns true when user is logged in and email is verified
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
     return (user !== null && user.emailVerified !== false) ? true : false;

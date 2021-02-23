@@ -20,7 +20,7 @@
     },
     {
       "target": "project-syntra",
-      "public": "dist/project-syntra",
+      "public": "./dist/project-syntra",
       "ignore": [
         "**/.*"
       ],
