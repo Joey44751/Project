@@ -12,8 +12,7 @@ import { Router } from "@angular/router";
 export class AuthService {
 
   userData: any;
-  user: any;
-  ngFireAuth: any;
+
 
   constructor(
     public afs: AngularFirestore,   // Inject Firestore service
@@ -60,9 +59,9 @@ export class AuthService {
 
   // Send email verfificaiton when new user sign up
   SendVerificationMail() {
-    return this.ngFireAuth.currentUser.then((u: { sendEmailVerification: () => any; }) => u.sendEmailVerification())
+    return this.afAuth.currentUser.then(user => user?.sendEmailVerification())  
     .then(() => {
-     // this.router.navigate(['verify-email']); // TODO
+      window.alert('Please verify your email');
     })
   }
 
