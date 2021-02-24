@@ -17,7 +17,7 @@
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
           <div class="col-sm-12 border border shadow rounded pt-2">
-            <form method="post" id="singninFrom">
+            <form id="singninFrom">
               <div class="form-group">
                 <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
                 <input type="email" #emailLogin name="email" id="email" class="form-control" placeholder="Enter valid email" required>
@@ -42,7 +42,7 @@
         </div>
         <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
           <div class="col-sm-12 border border shadow rounded pt-2">
-            <form method="post" id="singnupFrom">
+            <form id="singnupFrom">
               <div class="form-group">
                 <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
                 <input type="email" #registerEmail name="signupemail" id="signupemail" class="form-control" placeholder="Enter valid email" required>
@@ -80,7 +80,7 @@
     <!-- Modal -->
     <div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <form method="post" id="forgotpassForm">
+        <form id="forgotpassForm">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Forgot Password</h5>
