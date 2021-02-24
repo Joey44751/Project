@@ -37,6 +37,7 @@ export class AuthService {
    SignIn(email: string, password: string) {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .then((result) => {
+        console.log('Logged in')
         this.ngZone.run(() => {
           this.router.navigate(['/playground']);
         });
