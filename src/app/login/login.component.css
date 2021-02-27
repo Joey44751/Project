@@ -1,3 +1,4 @@
+/* Navigation menu syling */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #e67383 !important;
@@ -12,7 +13,7 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-
+/* button styling */
 .btn-primary:hover {
     color: black !important;
     background-color: #e67383 !important;
@@ -23,4 +24,9 @@ a {
     color: black !important;
     background-color: #e67383 !important;
     border-color: #e67383 !important;
+}
+/* Top logo styling */
+.homeLogo{
+    width: 250px;
+    height:auto
 }
