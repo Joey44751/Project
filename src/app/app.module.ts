@@ -12,6 +12,7 @@ import { PlaygroundComponent } from './playground/playground.component';
 import { AddplaygroundComponent } from './addplayground/addplayground.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -21,6 +22,7 @@ import { AuthService } from './auth.service';
     PlaygroundComponent,
     AddplaygroundComponent,
     LoginComponent,
+    HomeComponent,
  
   ],
   imports: [

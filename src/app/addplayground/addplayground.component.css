@@ -162,6 +162,12 @@
         input#price4:checked ~ #checkexpensive {
           display: inline-block
         }
+      #checkAdult {
+          display: none
+        }
+          input#price5:checked ~ #checkAdult {
+          display: inline-block
+        }
 
 
 /* general information buttens  */
@@ -177,6 +183,12 @@
     input#fnbNear:checked ~ #checkfnbNear {
     display: inline-block
     }
+  #checkPickNick {
+     display: none
+     }
+     input#pickNick:checked ~ #checkPickNick {
+     display: inline-block
+     }
   #checkWc {
   display: none
       }
