@@ -24,24 +24,7 @@
     height: auto !important;
     }
 
-    /* Input buttons style */
-    #inputGroup-sizing-sm{
-      width:90px;
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    #inputGroup-sizing-m{
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    .input-group-text{
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    .custom-file-input {
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
+
 
      /* Size of playground radio buttens  */
     #checksmall {

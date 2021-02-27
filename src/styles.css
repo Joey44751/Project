@@ -50,9 +50,9 @@ hr{
 .medium{
     width: 60px;
 }
-.medium:hover{
+/* .medium:hover{
     width: 80px;
-}
+} */
 .bi {
     color:  #DBE1D1;
     width: 25px;
@@ -168,4 +168,33 @@ label.star:hover {
 label.star:before {
     content: '\f006';
     font-family: FontAwesome
+}
+
+    /* Input buttons style */
+    #inputGroup-sizing-sm{
+        width:90px;
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      #inputGroup-sizing-m{
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      .input-group-text{
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      .custom-file-input {
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+
+.form-select{
+    color: #EB9782;
+    border-color: lightgray;
+    width: auto;
+}
+.card-img-top{
+    width :100px !important;
+    height:auto;
 }
