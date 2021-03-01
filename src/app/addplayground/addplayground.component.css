@@ -196,24 +196,3 @@
       input#forest:checked ~ #checkForest {
       display: inline-block
       }
-/* .addPlayground {
-    background-color: #EB9782 !important;
-    min-height: 75px;
-    width: 200px;
-    border-radius:5%;
-} */
-.addPlayground{
- font-size: 100px;
- text-align: center;
-}
-.addPlayground:hover{
-  opacity: 0.3;
-  text-align: center;
-}
-#toevoegen{
-  display: none;
-  text-align: center;
-}
-.addPlayground:hover ~ #toevoegen{
-  display: inline;
-}

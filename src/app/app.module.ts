@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
 import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -25,6 +26,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
     LoginComponent,
     HomeComponent,
     FavoritesComponent,
+    ProfileComponent,
  
   ],
   imports: [

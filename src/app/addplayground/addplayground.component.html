@@ -18,7 +18,7 @@
                             <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
                             <a class="nav-link" routerLink="/favorites">Favorieten</a>
                             <a class="nav-link" href="#">Opmerkingen</a>
-                            <a class="nav-link" href="#">Profiel</a>
+                            <a class="nav-link" routerLink="/profile"><i class="bi bi-person-circle"></i></a>
                         </div>
                     </div>
                 </nav>
@@ -72,7 +72,7 @@
                     <hr>
                      <div class="row">
                         <div class="col-md-6 mt-2">
-                            <h3>Locatie van de speeltuin</h3>
+                            <h3> <span><i class="bi bi-geo"></i></span> Locatie van de speeltuin</h3>
                             <br>
 
                             <!-- use current location -->
@@ -125,7 +125,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-6 mt-2">
-                            <h3>Informatie over de speeltuin</h3>
+                            <h3> <span><i class="bi bi-info-circle"></i></span> Informatie over de speeltuin</h3>
                         </div>
                         <div class="col-md-6 mt-2"></div>
                     </div>
@@ -287,7 +287,8 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="">Voeg menu toe</h3>
+                            <!-- Add menu -->
+                            <h3 class=""> Voeg menu toe</h3>
                                         <form method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                                 <div class="custom-file">
@@ -301,8 +302,9 @@
                                         </div>
                                     </form>
                         </div>
+                        <!-- add plan of playground -->
                         <div class="col-md-6">
-                            <h3 class="">Voeg plan toe</h3>
+                            <h3 class="">  Voeg plan toe</h3>
                                         <form method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                                 <div class="custom-file">
@@ -318,9 +320,10 @@
                         </div>
                     </div>
                     <hr>
+                    <!-- Add pictures of playground -->
                     <div class="row">
                         <div class="col-md-12">
-                                <h3 class="">Voeg foto's toe</h3>
+                                <h3 class=""> Voeg foto's toe</h3>
                                         <form method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                                 <div class="custom-file">
@@ -338,16 +341,16 @@
                  </div>
         <div class="col-md-3"></div>
     </div>
-    <div class="container mt-2">
+    <div class="container mt-4">
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 p-4 d-flex justify-content-center">
-                <div>
-                    <i class="bi bi-plus-circle-fill addPlayground"></i>
-                    <div id="toevoegen"><h3>Toevoegen</h3></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                  <div class="btn-group mt-0 mb-4 d-flex justify-content-right">
+                    <a href="#" class="btn btn-primary"> <span><i class="bi bi-plus-circle"></i></span> Voeg speeltuin toe</a>
                 </div>
-            <div class="col-md-1"></div>
+                <!-- Use current location -->
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 

@@ -131,6 +131,10 @@ hr{
     align-items: center;
     position: relative;
 }
+.homeLogo{
+    width: 150px;
+    height:auto
+}
 /* stars styles */
 div.stars {
     width: 270px;
@@ -197,4 +201,12 @@ label.star:before {
 .card-img-top{
     width :100px !important;
     height:auto;
+}
+/* user profile menu icon */
+.bi-person-circle{
+    position: relative;
+    vertical-align:center;
+    top: -16px;
+    left: 30px;
+    font-size: 35px !important;
 }
