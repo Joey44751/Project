@@ -24,24 +24,7 @@
     height: auto !important;
     }
 
-    /* Input buttons style */
-    #inputGroup-sizing-sm{
-      width:90px;
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    #inputGroup-sizing-m{
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    .input-group-text{
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
-    .custom-file-input {
-      color: #DBE1D1 !important;
-      background-color: #EB9782 !important;
-    }
+
 
      /* Size of playground radio buttens  */
     #checksmall {
@@ -162,6 +145,12 @@
         input#price4:checked ~ #checkexpensive {
           display: inline-block
         }
+      #checkAdult {
+          display: none
+        }
+          input#price5:checked ~ #checkAdult {
+          display: inline-block
+        }
 
 
 /* general information buttens  */
@@ -177,6 +166,12 @@
     input#fnbNear:checked ~ #checkfnbNear {
     display: inline-block
     }
+  #checkPickNick {
+     display: none
+     }
+     input#pickNick:checked ~ #checkPickNick {
+     display: inline-block
+     }
   #checkWc {
   display: none
       }
@@ -201,24 +196,3 @@
       input#forest:checked ~ #checkForest {
       display: inline-block
       }
-/* .addPlayground {
-    background-color: #EB9782 !important;
-    min-height: 75px;
-    width: 200px;
-    border-radius:5%;
-} */
-.addPlayground{
- font-size: 100px;
- text-align: center;
-}
-.addPlayground:hover{
-  opacity: 0.3;
-  text-align: center;
-}
-#toevoegen{
-  display: none;
-  text-align: center;
-}
-.addPlayground:hover ~ #toevoegen{
-  display: inline;
-}

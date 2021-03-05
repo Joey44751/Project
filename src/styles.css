@@ -36,7 +36,8 @@ hr{
     min-height: 70px;
     padding: 5px;
     background-color: #e67383;
-    vertical-align: middle
+    vertical-align: middle;
+    
 }
 
 /* icon styles */
@@ -49,9 +50,9 @@ hr{
 .medium{
     width: 60px;
 }
-.medium:hover{
+/* .medium:hover{
     width: 80px;
-}
+} */
 .bi {
     color:  #DBE1D1;
     width: 25px;
@@ -125,10 +126,14 @@ hr{
     border-left: 1.00rem solid #e67383!important;
 }
 .logo{
-    width: 250px;
+    width: 150px;
     height: auto;
     align-items: center;
     position: relative;
+}
+.homeLogo{
+    width: 150px;
+    height:auto
 }
 /* stars styles */
 div.stars {
@@ -167,4 +172,41 @@ label.star:hover {
 label.star:before {
     content: '\f006';
     font-family: FontAwesome
+}
+
+    /* Input buttons style */
+    #inputGroup-sizing-sm{
+        width:90px;
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      #inputGroup-sizing-m{
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      .input-group-text{
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+      .custom-file-input {
+        color: #DBE1D1 !important;
+        background-color: #EB9782 !important;
+      }
+
+.form-select{
+    color: #EB9782;
+    border-color: lightgray;
+    width: auto;
+}
+.card-img-top{
+    width :100px !important;
+    height:auto;
+}
+/* user profile menu icon */
+.bi-person-circle{
+    position: relative;
+    vertical-align:center;
+    top: -16px;
+    left: 30px;
+    font-size: 35px !important;
 }

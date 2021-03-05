@@ -19,6 +19,36 @@
 
 </head>
 <body>
+    <!-- pink section, navigation bar -->
+    <div class="balk">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- <a class="navbar-brand" href="#">The Parent App</a> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" routerLink="/home">Home</a>
+                                <a class="nav-link" routerLink="/playground">speeltuin</a>
+                                <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
+                                <a class="nav-link" routerLink="/favorites">Favorieten</a>
+                                <a class="nav-link" href="#">Opmerkingen</a>
+                                <a class="nav-link" routerLink="/profile"><i class="bi bi-person-circle"></i></a>
+                             </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- header carrousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -41,38 +71,7 @@
           <span class="visually-hidden">Next</span>
         </a>
     </div>
-    <!-- pink section, navigation bar -->
-        <div class="balk">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <!-- <a class="navbar-brand" href="#">The Parent App</a> -->
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    <a class="nav-link" href="#">Speeltuinen</a>
-                                    <a class="nav-link" href="#">Indoor Speeltuinen</a>
-                                    <a class="nav-link" href="#">Horeca</a>
-                                    <a class="nav-link" href="#">Tochten</a>
-                                    <a class="nav-link" href="#">Atractieparken</a>
-                                    <a class="nav-link" href="#">Musea</a>
-                                    <a class="nav-link" href="#">Activiteiten</a>
-                                 
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </div>
-        </div>
+    
         <!-- name of playground, rating and verification -->
         <div class="container mt-3">
             <div class="row pt-2">
@@ -112,9 +111,10 @@
                         <!-- Space underneath info icons -->
                         <div class="row">
                             <div class="col-md-12 mt-5">
-                                <p><i class="bi bi-eye-fill" title="online bekijken"></i>|<i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Menu</p>
-                                <p><i class="bi bi-eye-fill" title="online bekijken"></i>|<i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Overzicht van de speeltuin</p>
-                                <p><i class="bi bi-globe"title="website"></i>| www.webadresvandepartner.be</p>
+                                <p><i class="bi bi-eye-fill" title="online bekijken"></i> | <i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Menu</p>
+                                <p><i class="bi bi-eye-fill" title="online bekijken"></i> | <i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Overzicht van de speeltuin</p>
+                                <p><i class="bi bi-globe"title="website"></i> | www.webadresvandepartner.be</p>
+                                <p><span><i class="bi bi-person-check-fill"></i></span> | verifieer deze speeltuin</p>
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                         <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
                       </svg></a>
                     <!-- Add playground button -->
-                      <a href="#" class="btn button" title="voeg speeltuin toe" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                      <a routerLink="/addplayground" class="btn button nav-link" title="voeg speeltuin toe" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
                       </svg></a>
                   </div>
