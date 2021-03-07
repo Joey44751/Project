@@ -1,0 +1,90 @@
+<!-- pink section, navigation bar -->
+<div class="balk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- <a class="navbar-brand" href="#">The Parent App</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- menu items -->
+                        <div class="navbar-nav">
+                            <a class="nav-link active" routerLink="/home">Home</a>
+                            <a class="nav-link" routerLink="/playground">speeltuin</a>
+                            <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
+                            <a class="nav-link" routerLink="/favorites">Favorieten</a>
+                            <a class="nav-link" routerLink="/contact">contact</a>
+                            <a class="nav-link" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+                            <a class="nav-link" routerLink=""><i class="bi bi-box-arrow-right"></i></a>
+                         </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Top logo -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-5 text-center">
+            <img src="../../assets/img/tpalogo.png" class="homeLogo" alt="">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!-- page title -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 balk">
+   
+            <div class="input-group input-group-sm mt-5 p-3 mb-3">
+            <!-- User email adress -->
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                    </div>
+                    <input type="email" ng-model="ctcEmail" class="form-control" name="ctcEmail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <!-- short description -->
+            <div class="input-group mb-5 p-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">bericht</span>
+                </div>
+                <textarea class="form-control" ng-model="ctcDescr" name="ctcDescr" aria-label="With textarea"></textarea>
+             </div>
+        </div>
+        <div class="col-md-2"></div>
+</div>
+
+<!-- send button -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+              <div class="btn-group mt-0 mb-4 d-flex justify-content-right">
+                <a href="#" class="btn btn-primary"> <span><i class="bi bi-reply-fill"></i></span> Bericht versturen</a>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

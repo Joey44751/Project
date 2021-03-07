@@ -210,3 +210,11 @@ label.star:before {
     left: 30px;
     font-size: 35px !important;
 }
+.bi-box-arrow-right{
+    position: relative;
+    vertical-align:center;
+    top: -16px;
+    left: 30px;
+    font-size: 35px !important;
+    rotate: left !important;
+}
