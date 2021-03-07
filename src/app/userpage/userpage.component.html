@@ -1,0 +1,100 @@
+ <!-- pink section, navigation bar -->
+ <div class="balk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- <a class="navbar-brand" href="#">The Parent App</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- menu items -->
+                        <div class="navbar-nav">
+                            <a class="nav-link active" routerLink="/home">Home</a>
+                            <a class="nav-link" routerLink="/playground">speeltuin</a>
+                            <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
+                            <a class="nav-link" routerLink="/favorites">Favorieten</a>
+                            <a class="nav-link" routerLink="/contact">contact</a>
+                            <a class="nav-link" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+                            <a class="nav-link" routerLink=""><i class="bi bi-box-arrow-right"></i></a>
+                         </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Top logo -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-5 text-center">
+            <img src="../../assets/img/tpalogo.png" class="homeLogo" alt="">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!-- Form field for user information -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div>
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="text-right">Profiel  </h2> 
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" routerLink="/profile" type="button"><i class="bi bi-gear"></i></button></div>
+                    </div>
+                    <div class="row mt-2">
+                        <!-- User name -->
+                        <div class="col-md-4"><label class="labels">Naam</label><p>Lemmens</p></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><p>Niels</p></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><p>06 / 01 / 1981</p></div>
+                        <!-- Partner information -->
+                        <div class="col-md-12 mt-3"><h4>Partner</h4></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><p>Verhaegen</p></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><p>Gwenn</p></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                        <!-- Information about the kids -->
+                        <!-- Number of input fields should depend on number of children -->
+                        <div class="col-md-12 mt-3"><h4>kinderen</h4></div>
+                        <div class="col-md-2"><label class="labels">Aantal</label><p>2</p></div>
+                        <div class="col-md-10"></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><p>Lemmens</p></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><p>Sam</p></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><p>12 / 11 / 2013</p></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><p>Lemmens</p></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><p>Nim</p></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><p>13 / 12 / 2013</p></div>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- User adres information -->
+                        <div class="col-md-12 mt-3"><h4>Adresgegevens</h4></div>
+                        <div class="col-md-6"><label class="labels">Straat</label><p>Thor Park</p></div>
+                        <div class="col-md-6"><label class="labels">Huisnummer</label><p>32</p></div>
+                        <div class="col-md-6"><label class="labels">Stad</label><p>Genk</p></div>
+                        <div class="col-md-6"><label class="labels">Postcode</label><p>3560</p></div>
+                        <div class="col-md-6"><label class="labels">Land</label><p>Belgie</p></div>
+                        <div class="col-md-6"><label class="labels">Provincie</label><p>Limburg</p></div>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- User contact information -->
+                        <div class="col-md-12 mt-3"><h4>Contactgegevens</h4></div>
+                        <div class="col-md-12"><label class="labels">Gsm</label><p>0477 55 55 55</p></div>
+                        <div class="col-md-12"><label class="labels">Email</label><p>fakeemail@fakeemail.be</p></div>
+                    </div>
+                        <!-- Save profile button -->
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" routerLink="/profile" type="button"><i class="bi bi-gear"></i> Bewerk gegevens</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

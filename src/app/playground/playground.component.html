@@ -33,13 +33,15 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <!-- menu items -->
                             <div class="navbar-nav">
                                 <a class="nav-link active" routerLink="/home">Home</a>
                                 <a class="nav-link" routerLink="/playground">speeltuin</a>
                                 <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
                                 <a class="nav-link" routerLink="/favorites">Favorieten</a>
-                                <a class="nav-link" href="#">Opmerkingen</a>
-                                <a class="nav-link" routerLink="/profile"><i class="bi bi-person-circle"></i></a>
+                                <a class="nav-link" routerLink="/contact">contact</a>
+                                <a class="nav-link" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+                                <a class="nav-link" routerLink=""><i class="bi bi-box-arrow-right"></i></a>
                              </div>
                         </div>
                     </nav>
@@ -49,7 +51,7 @@
         </div>
     </div>
 
-    <!-- header carrousel -->
+    <!-- header photo carrousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -62,6 +64,7 @@
             <img src="assets/img/vb.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
+        <!-- carrousel buttons -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -80,11 +83,13 @@
                 <div class="col-md-2 cnt">
                     <img src="assets/img/rate.png" class="icon" title="rating">
                     <img src="assets/img/rate.png" class="icon" title="rating">
-                    <img src="assets/img/rateHalf.png" class="icon" title="rating"></div>
+                    <img src="assets/img/rateHalf.png" class="icon" title="rating">
+                </div>
                 <!-- title block icons -->
                 <div class="col-md-2 cnt">
                     <img src="assets/img/addByUser.png" class="icon" title="toegevoegd door">
-                    <img src="assets/img/verf.png" class="icon" title="geverifieerd"></div>
+                    <img src="assets/img/verf.png" class="icon" title="geverifieerd">
+                </div>
                 <div class="col-md-2 mb-2"></div>
             </div>
         </div> 
@@ -166,17 +171,26 @@
                 <br>
                 <div class="container d-flex justify-content-center mt-200">
                     <div class="row">
+                        <!-- choose number of stars -->
                         <div class="col-md-12">
                             <div class="stars">
-                                <form action=""> <input class="star star-5" id="star-5" type="radio" name="star" /> <label class="star star-5" for="star-5"></label> <input class="star star-4" id="star-4" type="radio" name="star" /> <label class="star star-4" for="star-4"></label> <input class="star star-3" id="star-3" type="radio" name="star" /> <label class="star star-3" for="star-3"></label> <input class="star star-2" id="star-2" type="radio" name="star" /> <label class="star star-2" for="star-2"></label> <input class="star star-1" id="star-1" type="radio" name="star" /> <label class="star star-1" for="star-1"></label> </form>
+                                <form action=""> 
+                                    <input class="star star-5" value="oneStar" id="star-5" type="radio" name="star" /> <label class="star star-5" for="star-5"></label> 
+                                    <input class="star star-4" value="twoStar" id="star-4" type="radio" name="star" /> <label class="star star-4" for="star-4"></label> 
+                                    <input class="star star-3" value="threeStar" id="star-3" type="radio" name="star" /> <label class="star star-3" for="star-3"></label> 
+                                    <input class="star star-2" value="fourStar" id="star-2" type="radio" name="star" /> <label class="star star-2" for="star-2"></label> 
+                                    <input class="star star-1" value="fiveStar" id="star-1" type="radio" name="star" /> <label class="star star-1" for="star-1"></label> 
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="panel">
+                    <!-- write review -->
                         <div class="panel-body">
-                            <textarea class="form-control" rows="2" placeholder="schrijf hier uw review"></textarea>
+                            <textarea class="form-control" name="PgReview" ng-model="PgReview" rows="2" placeholder="schrijf hier uw review"></textarea>
                             <div class="mar-top clearfix">
+                        <!-- Submit button -->
                             <button class="btn" type="submit"><i></i> Submit</button>
                                 <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"></a>
                                 <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#"></a>

@@ -6,6 +6,8 @@ import { AddplaygroundComponent } from '../addplayground/addplayground.component
 import { HomeComponent } from '../home/home.component';
 import { FavoritesComponent } from '../favorites/favorites.component';
 import { ProfileComponent } from '../profile/profile.component';
+import { UserpageComponent } from '../../app/userpage/userpage.component'
+import { ContactComponent } from '../contact/contact.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
     { path: 'addplayground', component: AddplaygroundComponent },
     { path: 'favorites', component:FavoritesComponent },
     { path: 'profile', component: ProfileComponent},
+    { path: 'userpage', component: UserpageComponent},
+    { path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({

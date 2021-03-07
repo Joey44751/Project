@@ -12,13 +12,15 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- menu items -->
                         <div class="navbar-nav">
                             <a class="nav-link active" routerLink="/home">Home</a>
                             <a class="nav-link" routerLink="/playground">speeltuin</a>
                             <a class="nav-link" routerLink="/addplayground">speeltuin toevoegen</a>
                             <a class="nav-link" routerLink="/favorites">Favorieten</a>
-                            <a class="nav-link" href="#">Opmerkingen</a>
-                            <a class="nav-link" href="#">Profiel</a>
+                            <a class="nav-link" routerLink="/contact">contact</a>
+                            <a class="nav-link" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+                            <a class="nav-link" routerLink=""><i class="bi bi-box-arrow-right"></i></a>
                          </div>
                     </div>
                 </nav>
@@ -47,7 +49,7 @@
             <div>
                 <div class="p-3 py-5">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h2 class="text-right">Profile Settings</h2>
+                        <h2 class="text-right">Gebruiker: gegevens bewerken</h2>
                     </div>
                     <div class="row mt-2">
                         <!-- User name -->
@@ -91,7 +93,7 @@
                         <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email " value=""></div>
                     </div>
                         <!-- Save profile button -->
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Bewaar gegevens</button></div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" routerLink="/userpage" type="button">Bewaar gegevens</button></div>
                 </div>
             </div>
         </div>

@@ -226,3 +226,8 @@
   .addPlayground:hover ~ #toevoegen{
     display: inline;
   }
+
+  #hmRate{
+    opacity: 0,3;
+  }
+
