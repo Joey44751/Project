@@ -1,0 +1,52 @@
+{
+    "Playgrounds":[
+        {
+        "id": "",
+        "pgName": "",
+        "pgVerf": "",
+        "pgFav": "",
+        "pgDist": "",
+
+        "pgRate1": "",
+        "pgRate2": "",
+        "pgRate3": "",
+        "pgRate4": "",
+        "pgRate5": "",
+
+        "pgCoordinates": "",
+        "pgStreet": "",
+        "pgNumber": "",
+        "pgCity": "",
+        "pgPostal": "",
+
+        "pgDescr": "",
+        "pgSizeSmall": "",
+        "pgSizeMedium": "",
+        "pgSizeLarge": "",
+        "pgSizeXtraLarge": "",
+
+        "pgAge03": "",
+        "pgAge36": "",
+        "pgAge69": "",
+        "pgAge912": "",
+
+        "pgEntryFree": false,
+        "pgEntryCheap": true,
+        "pgEntryNormal": false,
+        "pgEntryExpensive": false,
+        "pgEntryAdults": false,
+
+        "pgFnb": true,
+        "pgFnbNear": "",
+        "pgPicknick": "",
+
+        "pgWc": "",
+
+        "pgLsCity": "",
+        "pgLsField": "",
+        "pgLsForest": "",
+
+        "pgWebsite": ""
+                
+        }]
+}
