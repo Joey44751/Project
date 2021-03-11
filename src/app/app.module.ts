@@ -5,6 +5,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AppRoutingModule } from '../../src/app/app-routing/app-routing.module';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 
 import { AppComponent } from './app.component';
@@ -38,7 +39,8 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    GoogleMapsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
