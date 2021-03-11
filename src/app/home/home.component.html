@@ -86,7 +86,14 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <div class="">
-        <img src="../../assets/img/mapvb2.png" class="map" alt="">
+        <!-- <img src="../../assets/img/mapvb2.png" class="map" alt=""> -->
+        <google-map
+        height="500px"
+        width="100%"
+        [zoom]="zoom"
+        [center]="center"
+        [options]="options"
+        ></google-map>
         </div>
     </div>
     <div class="col-md-2"></div>
