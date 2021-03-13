@@ -54,7 +54,7 @@
             </div>
             <div class="btn-group mt-0 mb-4">
                 <a href="#" class="btn btn-primary active" aria-current="page">toevoegen</a>
-                <a href="#" class="btn btn-primary">zoek</a>
+                <a class="btn btn-primary" onclick="Geolocation">zoek</a>
             </div>
             <!-- Use current location -->
             <div class="d-flex">
@@ -90,6 +90,7 @@
         <google-map
             height="350px"
             width="100%"
+            [center]="center"
         ></google-map>
         </div>
     </div>
