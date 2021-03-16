@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Parent app</title>
-    <!-- <link rel="stylesheet" href="eindwerk.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" media="all">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
     <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" media="all" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" media="all" crossorigin="anonymous"></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> 
 
-
+    
 </head>
 <body>
+    <div id=htmlData>
     <!-- pink section, navigation bar -->
     <div class="balk">
         <div class="container">
@@ -104,13 +105,13 @@
                                 <h3>Info</h3>
                                 <hr>
                                 <!-- info icons -->
-                                <div class="float-left"><img src="assets/img/age36.png" class="icon medium" title="voor leeftijd van 3-6 jaar"></div>
-                                <div class="float-left"><img src="assets/img/age69.png" class="icon medium" title="voor leeftijd van 6-9jaar"></div>
-                                <div class="float-left"><img src="assets/img/sizeM.png" class="icon medium" title="grote van de speeltuin"></div>
-                                <div class="float-left"><img src="assets/img/priceNormal.png" class="icon medium" title="Normale prijsklasse"></div>
-                                <div class="float-left"><img src="assets/img/fnb.png" class="icon medium" title="mogelijkheid tot eten en drinken aanwezig"></div>
-                                <div class="float-left"><img src="assets/img/wc.png" class="icon medium" title="WC aanwezig"></div>
-                                <div class="float-left"><p><img src="assets/img/from.png" class="icon medium" title="Afstand vanaf huidige locatie"> 2km</p></div>
+                                <div class="float-left"><img src="assets/img/age36.png" class="icon medium" media='all' title="voor leeftijd van 3-6 jaar"></div>
+                                <div class="float-left"><img src="assets/img/age69.png" class="icon medium" media='all' title="voor leeftijd van 6-9jaar"></div>
+                                <div class="float-left"><img src="assets/img/sizeM.png" class="icon medium" media='all' title="grote van de speeltuin"></div>
+                                <div class="float-left"><img src="assets/img/priceNormal.png" class="icon medium" media='all' title="Normale prijsklasse"></div>
+                                <div class="float-left"><img src="assets/img/fnb.png" class="icon medium" media='all' title="mogelijkheid tot eten en drinken aanwezig"></div>
+                                <div class="float-left"><img src="assets/img/wc.png" class="icon medium" media='all' title="WC aanwezig"></div>
+                                <div class="float-left"><p><img src="assets/img/from.png" class="icon medium" media='all' title="Afstand vanaf huidige locatie"> 2km</p></div>
                             </div>
                         </div>
                         <!-- Space underneath info icons -->
@@ -119,7 +120,7 @@
                                 <p><i class="bi bi-eye-fill" title="online bekijken"></i> | <i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Menu</p>
                                 <p><i class="bi bi-eye-fill" title="online bekijken"></i> | <i class="bi bi-file-earmark-arrow-down-fill" title="download"></i> Overzicht van de speeltuin</p>
                                 <p><i class="bi bi-globe"title="website"></i> | www.webadresvandepartner.be</p>
-                                <p><span><i class="bi bi-person-check-fill"></i></span> | verifieer deze speeltuin</p>
+                                <p id="verf" onclick="erik()"><span><i class="bi bi-person-check-fill"></i></span> | verifieer deze speeltuin</p>
                             </div>
                         </div>
                     </div>
@@ -140,7 +141,7 @@
                     <path fill-rule="evenodd" d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z"/>
                     </svg></a>
                       <!-- Print icon -->
-                    <a href="#" class="btn button" title="print" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+                    <a onclick="window.print()" class="btn button" title="print" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
                         <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
                         <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
                       </svg></a>
@@ -149,7 +150,7 @@
                         <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
                       </svg></a>
                     <!-- export icon -->
-                    <a href="#" class="btn button" title="export" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                    <a class="btn button" title="export"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
                       </svg></a>
                     <!-- Add playground button -->
@@ -160,8 +161,11 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-    <!-- Add review -->
     </div>
+    </div>
+    <!-- zorgt dat alles hieronder niet afgedrukt wordt -->
+    <div class="noprint">
+    <!-- Add review -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <div class="container mt-5 bootdey">
         <div class="row">
@@ -213,6 +217,7 @@
                     <google-map
                     height="300px"
                     width="100%"
+                    [center]="center"
                 ></google-map>
                 </div>
                 <!-- card with other playgrounds -->
@@ -253,8 +258,12 @@
             <div class="col-md-2"></div>
         </div>
     </div>
+</div>
 
 <!-- </div>
 </div> -->
 </body>
+
+
+
 </html>
