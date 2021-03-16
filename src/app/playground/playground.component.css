@@ -2,6 +2,8 @@
     display: inline-block;
 }
 
+
+
 @media print
 {
 .noprint {display:none;}
