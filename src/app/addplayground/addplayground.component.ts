@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaygroundService} from '../http.service';
+import { Playground } from '../http.model';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-addplayground',
@@ -10,7 +13,7 @@ export class AddplaygroundComponent implements OnInit {
   lat:any;
   lng:any;
   
-  constructor() {
+  constructor(private playgroundService:PlaygroundService) {
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
         this.lat=+pos.coords.latitude;
@@ -32,7 +35,7 @@ export class AddplaygroundComponent implements OnInit {
       console.log(this.center);
       })
     
-   
+   console.log(this.playgroundService.getPlaygrounds());
  };
 
 }

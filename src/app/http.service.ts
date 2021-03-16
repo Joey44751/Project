@@ -9,7 +9,7 @@ export class PlaygroundService {
 constructor(private http: HttpClient){}
 url:string = "https://syntra.terugsamen.be/mightyducks/public/api/companies";
 
-    getPlayground(): Observable<Playground[]> {
+    getPlaygrounds(): Observable<Playground[]> {
         return this.http
             .get<Playground[]>(this.url)
             .pipe(
