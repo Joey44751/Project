@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   lat:any;
   lng:any;
   
-<<<<<<< HEAD
   constructor(public authService: AuthService) {
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
@@ -23,9 +22,6 @@ export class HomeComponent implements OnInit {
       })
     }
   }
-=======
-  constructor() {}
->>>>>>> 31be46eb18f2eac1a485fbaa6a534a97d351937d
 
     center = ({lat: 5.03076, lng: 5.03076});
     // set center(center: google.maps.LatLngLiteral | google.maps.LatLng);
