@@ -6,6 +6,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AppRoutingModule } from '../../src/app/app-routing/app-routing.module';
 import { GoogleMapsModule } from '@angular/google-maps'
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,6 +20,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { ContactComponent } from './contact/contact.component';
+import { PlaygroundService } from './http.service';
 
 
 
@@ -38,6 +40,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
