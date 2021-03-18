@@ -29,17 +29,19 @@ export class PlaygroundComponent implements OnInit {
   
 
   ngOnInit(): void {
-   
-    navigator.geolocation.getCurrentPosition((p) =>{
+     // get user location form browser or cell phone GPS
+     navigator.geolocation.getCurrentPosition((p) =>{
+      // set center of map to geolocation coordinates
       this.center = {
         lat: p.coords.latitude,
         lng: p.coords.longitude
         }
       console.log(this.center);
       })
+    };
       
    
  };
 
-}
+
 

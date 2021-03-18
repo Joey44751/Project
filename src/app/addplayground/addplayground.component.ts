@@ -29,8 +29,9 @@ export class AddplaygroundComponent implements OnInit {
   
 
   ngOnInit(): void {
-   
+    // get current location of browser or cell phone location
     navigator.geolocation.getCurrentPosition((p) =>{
+      // center map on current location
       this.center = {
         lat: p.coords.latitude,
         lng: p.coords.longitude
@@ -45,6 +46,7 @@ export class AddplaygroundComponent implements OnInit {
    console.log(playgrounds[0].name);
    
  };
+  // Add new playground to the databank
   addNewPlayground(name:string,address:string,zip_code:string,extra:string){
     let dateString = '1968-11-16T00:00:00' 
     let newDate = new Date(dateString);
