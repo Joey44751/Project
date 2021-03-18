@@ -296,7 +296,7 @@
                         <div class="col-md-6">
                             <!-- Add menu -->
                             <h3 class=""> Voeg menu toe</h3>
-                                        <form method="post" enctype="multipart/form-data">
+                                        <form>
                                         <div class="form-group">
                                                 <div class="custom-file">
                                                 <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
@@ -312,7 +312,7 @@
                         <!-- add plan of playground -->
                         <div class="col-md-6">
                             <h3 class="">  Voeg plan toe</h3>
-                                        <form method="post" enctype="multipart/form-data">
+                                        <form>
                                         <div class="form-group">
                                                 <div class="custom-file">
                                                 <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
@@ -331,7 +331,7 @@
                     <div class="row">
                         <div class="col-md-12">
                                 <h3 class=""> Voeg foto's toe</h3>
-                                        <form method="post" enctype="multipart/form-data">
+                                        <form>
                                         <div class="form-group">
                                                 <div class="custom-file">
                                                 <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
@@ -353,7 +353,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                   <div class="btn-group mt-0 mb-4 d-flex justify-content-right">
-                    <a href="#" (click)="addNewPlayground(name.value,street.value + ' ' + number.value + ' ' + city.value,zip_code.value,extra.value)" class="btn btn-primary"> <span><i class="bi bi-plus-circle"></i></span> Voeg speeltuin toe</a>
+                    <a (click)="addNewPlayground(name.value,street.value + ' ' + number.value + ' ' + city.value,zip_code.value,extra.value)" class="btn btn-primary"> <span><i class="bi bi-plus-circle"></i></span> Voeg speeltuin toe</a>
                 </div>
                 <!-- Use current location -->
             </div>

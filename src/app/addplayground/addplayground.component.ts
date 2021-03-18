@@ -39,7 +39,7 @@ export class AddplaygroundComponent implements OnInit {
    console.log('PLAYGROUND LOG:')
    this.playgroundService.getPlaygrounds().subscribe(
      data => {localStorage.setItem('playgrounds', JSON.stringify(data));  JSON.parse(localStorage.getItem('playgrounds') || '{}');});
-   const playgrounds = JSON.parse(localStorage.getItem('playgrounds') || '{}');
+   const playgrounds = JSON.parse(localStorage.getItem('playgrounds') || '{}');   
    console.log(playgrounds);
    console.log(playgrounds[0].name);
    
