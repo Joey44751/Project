@@ -62,9 +62,9 @@
                         <div class="col-md-12">
                     <div class="input-group input-group-sm mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-m">Naam speeltuin</span>
+                            <span class="input-group-text"  id="inputGroup-sizing-m">Naam speeltuin</span>
                         </div>
-                        <input type="text" class="form-control" ng-model="namePlayground" name="namePlayground" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control" #name ng-model="namePlayground" name="namePlayground" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                     </div>
                 </div>
                 </div>
@@ -87,9 +87,9 @@
                             <div class="input-group input-group-sm mb-3">
                                 <!-- street -->
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Straat</span>
+                                    <span class="input-group-text"  id="inputGroup-sizing-sm">Straat</span>
                                 </div>
-                                <input type="text" ng-model="street" class="form-control" name="street" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                <input type="text" ng-model="street" #street class="form-control" name="street" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
 
                             <div class="input-group input-group-sm mb-3">
@@ -97,7 +97,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Nummer</span>
                                 </div>
-                                <input type="number" ng-model="homeNumber" name="homeNumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                <input type="number" ng-model="homeNumber" #number name="homeNumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             
                             <div class="input-group input-group-sm mb-3">
@@ -105,7 +105,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Stad</span>
                                 </div>
-                                <input type="text" ng-model="city" name="city" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                <input type="text" ng-model="city" name="city" #city class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
 
                             <div class="input-group input-group-sm mb-3">
@@ -113,7 +113,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Postcode</span>
                                 </div>
-                                <input type="text" ng-model="postal" name="postal" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                <input type="text" ng-model="postal" name="postal" #zip_code class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
 
                         </div>
@@ -144,7 +144,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">Korte omschrijving</span>
                                 </div>
-                                <textarea class="form-control" ng-model="descr" name="descr" aria-label="With textarea"></textarea>
+                                <textarea class="form-control" #extra ng-model="descr" name="descr" aria-label="With textarea"></textarea>
                               </div>
                         </div>
                     </div>
@@ -353,7 +353,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                   <div class="btn-group mt-0 mb-4 d-flex justify-content-right">
-                    <a href="#" class="btn btn-primary"> <span><i class="bi bi-plus-circle"></i></span> Voeg speeltuin toe</a>
+                    <a href="#" (click)="addNewPlayground(name.value,street.value + ' ' + number.value + ' ' + city.value,zip_code.value,extra.value)" class="btn btn-primary"> <span><i class="bi bi-plus-circle"></i></span> Voeg speeltuin toe</a>
                 </div>
                 <!-- Use current location -->
             </div>

@@ -46,7 +46,7 @@ import { PlaygroundService } from './http.service';
     AngularFireAuthModule,
     GoogleMapsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,PlaygroundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

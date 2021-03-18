@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PlaygroundService} from '../http.service';
 import { Playground } from '../http.model';
+import { Observable } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
@@ -9,7 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./addplayground.component.css']
 })
 export class AddplaygroundComponent implements OnInit {
-
+  playgrounds$!: Observable<Playground[]>;
+  playground$!:Observable<Playground>;
   lat:any;
   lng:any;
   
@@ -34,8 +36,22 @@ export class AddplaygroundComponent implements OnInit {
         }
       console.log(this.center);
       })
-    
-   console.log(this.playgroundService.getPlaygrounds());
+   console.log('PLAYGROUND LOG:')
+   this.playgroundService.getPlaygrounds().subscribe(
+     data => {localStorage.setItem('playgrounds', JSON.stringify(data));  JSON.parse(localStorage.getItem('playgrounds') || '{}');});
+   const playgrounds = JSON.parse(localStorage.getItem('playgrounds') || '{}');
+   console.log(playgrounds);
+   console.log(playgrounds[0].name);
+   
  };
+  addNewPlayground(name:string,address:string,zip_code:string,extra:string){
+    let dateString = '1968-11-16T00:00:00' 
+    let newDate = new Date(dateString);
+    const playground = new Playground(null,name,address,zip_code,null,null,null,1,null,newDate,null,extra);
+    this.playgroundService.addPlayground(playground)
+    .subscribe(data => console.log(data));
+    this.playgrounds$ = this.playgroundService.getPlaygrounds();
+} 
+
 
 }

@@ -6,15 +6,15 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class PlaygroundService {
+
+
 constructor(private http: HttpClient){}
-url:string = "https://syntra.terugsamen.be/mightyducks/public/api/companies";
+url:string = "https://massimo-dn-cors.herokuapp.com/https://syntra.terugsamen.be/mightyducks/public/api/companies";
 
     getPlaygrounds(): Observable<Playground[]> {
         return this.http
             .get<Playground[]>(this.url)
-            .pipe(
-                tap (result => console.log('Via onze eigen API:', result))
-            )
+            .pipe()
     }
     getPlaygroundById(id:number) {
         console.log(id);
