@@ -1,4 +1,5 @@
 import { Component,OnInit, Input } from '@angular/core';
+import { AuthService } from "../auth.service";
 
 
 
@@ -13,7 +14,7 @@ export class PlaygroundComponent implements OnInit {
   lng:any;
 
     
-  constructor() {
+  constructor(public authService: AuthService) {
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
         this.lat=+pos.coords.latitude;

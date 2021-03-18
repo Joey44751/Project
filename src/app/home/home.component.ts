@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Mapservice } from '../../services/maps.service'
+import { AuthService } from "../auth.service";
 
 
 
@@ -14,7 +15,7 @@ export class HomeComponent implements OnInit {
   lat:any;
   lng:any;
   
-  constructor() {
+  constructor(public authService: AuthService) {
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
         this.lat=+pos.coords.latitude;

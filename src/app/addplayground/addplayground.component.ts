@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PlaygroundService} from '../http.service';
 import { Playground } from '../http.model';
 import { Observable } from 'rxjs';
+import { AuthService } from "../auth.service";
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
@@ -15,7 +16,7 @@ export class AddplaygroundComponent implements OnInit {
   lat:any;
   lng:any;
   
-  constructor(private playgroundService:PlaygroundService) {
+  constructor(private playgroundService:PlaygroundService,public authService: AuthService) {
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
         this.lat=+pos.coords.latitude;

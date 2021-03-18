@@ -42,7 +42,7 @@
                                 <a class="nav-link" routerLink="/favorites">Favorieten</a>
                                 <a class="nav-link" routerLink="/contact">contact</a>
                                 <a class="nav-link" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
-                                <a class="nav-link" routerLink=""><i class="bi bi-box-arrow-right"></i></a>
+                                <a class="nav-link" (click)="authService.SignOut()"><i class="bi bi-box-arrow-right"></i></a>
                              </div>
                         </div>
                     </nav>

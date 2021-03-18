@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from "../auth.service";
 
 @Component({
   selector: 'app-favorites',
@@ -10,7 +11,7 @@ export class FavoritesComponent implements OnInit {
   lat:any;
   lng:any;
   
-  constructor() {
+  constructor(public authService: AuthService) {
     // get current position
     if (navigator){
       navigator.geolocation.getCurrentPosition(pos=>{
