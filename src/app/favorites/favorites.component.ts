@@ -24,16 +24,18 @@ export class FavoritesComponent implements OnInit {
   
 
   ngOnInit(): void {
-    // assign current position to map center
+    // get user location form browser or cell phone GPS
     navigator.geolocation.getCurrentPosition((p) =>{
+      // set center of map to geolocation coordinates
       this.center = {
         lat: p.coords.latitude,
         lng: p.coords.longitude
         }
       console.log(this.center);
       })
+    };
     
    
  };
 
-}
+
