@@ -16,20 +16,20 @@ export class HomeComponent implements OnInit {
   lng:any;
   markers: any;
 
-  addMarker() {
-    this.markers.push({
-      position: {
-        lat: this.center.lat + ((Math.random() - 0.5) * 2) / 10,
-        lng: this.center.lng + ((Math.random() - 0.5) * 2) / 10,
-      },
-      label: {
-        color: 'red',
-        text: 'Marker label ' + (this.markers.length + 1),
-      },
-      title: 'Marker title ' + (this.markers.length + 1),
-      options: { animation: google.maps.Animation.BOUNCE },
-    })
-  }
+  // addMarker() {
+  //   this.markers.push({
+  //     position: {
+  //       lat: this.center.lat + ((Math.random() - 0.5) * 2) / 10,
+  //       lng: this.center.lng + ((Math.random() - 0.5) * 2) / 10,
+  //     },
+  //     label: {
+  //       color: 'red',
+  //       text: 'Marker label ' + (this.markers.length + 1),
+  //     },
+  //     title: 'Marker title ' + (this.markers.length + 1),
+  //     options: { animation: google.maps.Animation.BOUNCE },
+  //   })
+  // }
   
   constructor(public authService: AuthService) {
     if (navigator){
@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
       })
     } 
   }
-
+    position = ({lat: 51.083081199999995, lng: 5.0187691999999995})
     center = ({lat: 5.03076, lng: 5.03076});
     // set center(center: google.maps.LatLngLiteral | google.maps.LatLng);
   
