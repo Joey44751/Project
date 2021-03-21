@@ -39,6 +39,7 @@ export class AddplaygroundComponent implements OnInit {
       console.log(this.center);
       })
    console.log('PLAYGROUND LOG:')
+   // log the GET request , save it to localstorage and split the result
    this.playgroundService.getPlaygrounds().subscribe(
      data => {localStorage.setItem('playgrounds', JSON.stringify(data));  JSON.parse(localStorage.getItem('playgrounds') || '{}');});
    const playgrounds = JSON.parse(localStorage.getItem('playgrounds') || '{}');   
@@ -46,11 +47,12 @@ export class AddplaygroundComponent implements OnInit {
    console.log(playgrounds[0].name);
    
  };
-  // Add new playground to the databank
-  addNewPlayground(name:string,address:string,zip_code:string,extra:string){
-    let dateString = '1968-11-16T00:00:00' 
-    let newDate = new Date(dateString);
-    const playground = new Playground(null,name,address,zip_code,null,null,null,1,null,newDate,null,extra);
+  // Add new playground to the database
+  addNewPlayground(name:string,street:string,number:string,city:string,zip_code:string,extra:string){
+    let dateString = '1999-12-11' 
+    let newDate = dateString;
+    let address = street + ' ' + number + ' ' + city;
+    const playground = new Playground(name,'address',zip_code,'test@gmail.com','0475575910',0,1,12,newDate,50,extra);
     this.playgroundService.addPlayground(playground)
     .subscribe(data => console.log(data));
     this.playgrounds$ = this.playgroundService.getPlaygrounds();

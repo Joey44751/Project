@@ -9,7 +9,7 @@ export class Playground {
         public site:any, 
         public category_id:number,
         public hours:any,
-        public dates:Date,
+        public dates:any,
         public prices:any,
         public extras:string
 
