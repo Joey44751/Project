@@ -49,12 +49,11 @@ export class AddplaygroundComponent implements OnInit {
  };
   // Add new playground to the database
   addNewPlayground(name:string,street:string,number:string,city:string,zip_code:string,extra:string){
-    let dateString = '1999-12-11' 
-    let newDate = dateString;
+    let newDate = '1999-12-11' 
     let address = street + ' ' + number + ' ' + city;
-    const playground = new Playground(null,name,'address',zip_code,'test@gmail.com','0475575910',0,1,12,newDate,50,extra);
+    const playground = new Playground(null,name,address,zip_code,'test@gmail.com','0475575910','test@info.be',1,'09:00-18:00',newDate,'€50-€100',extra);
     this.playgroundService.addPlayground(playground)
-    .subscribe(data => console.log(data));
+    .subscribe(data => console.log(data)); 
     this.playgrounds$ = this.playgroundService.getPlaygrounds();
 } 
 
