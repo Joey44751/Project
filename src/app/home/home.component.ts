@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   lat:any;
   lng:any;
   markers: any;
+  
 
   // addMarker() {
   //   this.markers.push({
@@ -38,7 +39,9 @@ export class HomeComponent implements OnInit {
       })
     } 
   }
-    position = ({lat: 51.083081199999995, lng: 5.0187691999999995})
+    zoom = 12;
+    position = ({lat: 50.967, lng: 5.417})
+    // set position
     center = ({lat: 5.03076, lng: 5.03076});
     // set center(center: google.maps.LatLngLiteral | google.maps.LatLng);
   
