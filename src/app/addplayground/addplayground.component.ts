@@ -52,7 +52,7 @@ export class AddplaygroundComponent implements OnInit {
     let dateString = '1999-12-11' 
     let newDate = dateString;
     let address = street + ' ' + number + ' ' + city;
-    const playground = new Playground(name,'address',zip_code,'test@gmail.com','0475575910',0,1,12,newDate,50,extra);
+    const playground = new Playground(null,name,'address',zip_code,'test@gmail.com','0475575910',0,1,12,newDate,50,extra);
     this.playgroundService.addPlayground(playground)
     .subscribe(data => console.log(data));
     this.playgrounds$ = this.playgroundService.getPlaygrounds();
