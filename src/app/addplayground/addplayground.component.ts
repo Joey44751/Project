@@ -29,6 +29,9 @@ export class AddplaygroundComponent implements OnInit {
   
 
   ngOnInit(): void {
+    this.playgroundService.getPlaygrounds().subscribe(
+      data => {localStorage.setItem('playgrounds', JSON.stringify(data));});
+    const playgrounds = JSON.parse((localStorage.getItem('playgrounds') || '{}'));
     // get current location of browser or cell phone location
     navigator.geolocation.getCurrentPosition((p) =>{
       // center map on current location
@@ -40,11 +43,10 @@ export class AddplaygroundComponent implements OnInit {
       })
    console.log('PLAYGROUND LOG:')
    // log the GET request , save it to localstorage and split the result
-   this.playgroundService.getPlaygrounds().subscribe(
-     data => {localStorage.setItem('playgrounds', JSON.stringify(data));  JSON.parse(localStorage.getItem('playgrounds') || '{}');});
-   const playgrounds = JSON.parse(localStorage.getItem('playgrounds') || '{}');   
+
    console.log(playgrounds);
    console.log(playgrounds[0].name);
+
    
  };
   // Add new playground to the database

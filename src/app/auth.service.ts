@@ -57,14 +57,19 @@ export class AuthService {
   }
 
    // Sign up with email/password
-   SignUp(email: string, password: string) {
-   return this.afAuth.createUserWithEmailAndPassword(email, password)
-      .then((result) => {
-        this.SendVerificationMail();
-        this.SetUserData(result.user);
-      }).catch((error) => {
-        window.alert(error.message)
+   SignUp(email: string, password: string , password2: string) {
+     if(password == password2){
+       return this.afAuth.createUserWithEmailAndPassword(email, password).then((result) => {
+         this.SendVerificationMail();
+         this.SetUserData(result.user);
+        }).catch((error) => {
+          window.alert(error.message)
       })
+    }
+    else
+    {
+     return window.alert('Please make sure both passwords match!');
+    }
   }
 
   // Send email verfificaiton when new user sign up

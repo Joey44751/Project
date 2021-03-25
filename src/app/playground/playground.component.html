@@ -79,10 +79,10 @@
     </div>
     
         <!-- name of playground, rating and verification -->
-        <div class="container mt-3">
+        <div class="container mt-3" *ngFor="let playground of playgrounds$ | async">
             <div class="row pt-2">
                 <div class="col-md-2 "></div>
-                <div class="col-md-4"><h2>Naam van de speeltuin</h2></div>
+                <div class="col-md-4"><h2>{{playground.name}}</h2></div>
                 <div class="col-md-2 cnt">
                     <img src="assets/img/rate.png" class="icon" title="rating">
                     <img src="assets/img/rate.png" class="icon" title="rating">
@@ -226,10 +226,10 @@
             </div>
             <div class="col-md-4">
                 <hr>
-                <div class="card border-left-primary">
+                <div class="card border-left-primary" *ngFor="let playground of playgrounds$ | async">
                     <div class="card-body">
                             <div>
-                                <h3>Naam speeltuin</h3>
+                                <h3>{{playground.name}}</h3>
                                 <img src="assets/img/rate.png" class="icon iconsm float-left" title="rating">
                                 <img src="assets/img/rate.png" class="icon iconsm float-left" title="rating">
                                 <img src="assets/img/rateHalf.png" class="icon iconsm float-left" title="rating">
@@ -240,21 +240,6 @@
                                 <p><img src="assets/img/from.png" class="icon iconsm float-left" title="Afstand vanaf huidige locatie"> 2km</p>
                             </div>
                     </div>
-                    <hr>
-                    <div class="card-body">
-                        <div>
-                            <h3>Naam speeltuin</h3>
-                            <img src="assets/img/rate.png" class="icon iconsm float-left" title="rating">
-                            <img src="assets/img/rate.png" class="icon iconsm float-left" title="rating">
-                            <img src="assets/img/rateHalf.png" class="icon iconsm float-left" title="rating">
-                            <img src="assets/img/addByUser.png" class="icon iconsm float-left" title="toegevoegd door">
-                            <img src="assets/img/verf.png" class="icon iconsm float-left" title="geverifieerd">
-                            <img src="assets/img/age36.png" class="icon iconsm float-left" title="voor leeftijd van 3-6 jaar">
-                            <img src="assets/img/age69.png" class="icon iconsm float-left" title="voor leeftijd van 6-9jaar">
-                            <p><img src="assets/img/from.png" class="icon iconsm float-left" title="Afstand vanaf huidige locatie"> 2km</p>
-                        </div>
-                </div>
-                    
                 </div>
             </div>
             <div class="col-md-2"></div>
