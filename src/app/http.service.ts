@@ -25,7 +25,9 @@ url:string = "https://massimo-dn-cors.herokuapp.com/https://syntra.terugsamen.be
 
     addPlayground(newPlayground:Playground): Observable<any> {
         const headers = new HttpHeaders().set('Content-Type', 'application/json');
-        return this.http.post(this.url,newPlayground,{headers:headers});
+        return this.http.post(this.url,newPlayground,{headers:headers}).pipe(
+            tap (result => window.alert('Speeltuin toegevoegd!'))
+        )
     }
 
     updatePlayground(newPlayground:Playground): Observable<any> {
