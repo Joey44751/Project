@@ -1,0 +1,93 @@
+<!-- pink section, navigation bar -->
+<nav class="navbar navbar-expand-md navbar-dark balk">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/playground">Speeltuin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/addplayground">Speeltuin toevoegen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/favorites">Favorieten</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Gebruikers info" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Logout"(click)="authService.SignOut()"><i class="bi bi-box-arrow-right"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Top logo -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-5 text-center">
+            <img src="../../assets/img/tpalogo.png" class="homeLogo" alt="">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!-- page title -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 balk">
+   
+            <div class="input-group input-group-sm mt-5 p-3 mb-3">
+            <!-- User email adress -->
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                    </div>
+                    <input type="email" #email ng-model="ctcEmail" style="min-height:50px" class="form-control" name="ctcEmail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <!-- short description -->
+            <div class="input-group mb-5 p-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Bericht</span>
+                </div>
+                <textarea class="form-control" #bericht style="min-height:250px"    ng-model="ctcDescr" name="ctcDescr" aria-label="With textarea"></textarea>
+            </div>
+
+            <!-- send button -->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="btn-group mt-0 mb-4 d-flex justify-content-right">
+                            <a (click)="sendEmail(email.value,bericht.value)" type="button" class="btn btn-primary"> <span><i class="bi bi-reply-fill"></i></span> Bericht versturen</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-2"></div>
+</div>

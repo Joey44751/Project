@@ -1,0 +1,104 @@
+ <!-- pink section, navigation bar -->
+ <nav class="navbar navbar-expand-md navbar-dark balk">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/playground">Speeltuin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/addplayground">Speeltuin toevoegen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/favorites">Favorieten</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Gebruikers info" routerLink="/userpage"><i class="bi bi-person-circle"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Logout"(click)="authService.SignOut()"><i class="bi bi-box-arrow-right"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Top logo -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-5 text-center">
+            <img src="../../assets/img/tpalogo.png" class="homeLogo" alt="">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!-- Form field for user information -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div>
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="text-right">Gebruiker: gegevens bewerken</h2>
+                    </div>
+                    <div class="row mt-2">
+                        <!-- User name -->
+                        <div class="col-md-4"><label class="labels">Naam</label><input type="text" class="form-control" placeholder="Achternaam" value=""></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><input type="text" class="form-control" value="" placeholder="Voornaam"></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                        <!-- Partner information -->
+                        <div class="col-md-12 mt-3"><h4>Partner</h4></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><input type="text" class="form-control" placeholder="Achternaam" value=""></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><input type="text" class="form-control" value="" placeholder="Voornaam"></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                        <!-- Information about the kids -->
+                        <!-- Number of input fields should depend on number of children -->
+                        <div class="col-md-12 mt-3"><h4>kinderen</h4></div>
+                        <div class="col-md-2"><label class="labels">Aantal</label><input type="number" class="form-control" placeholder="aantal" value=""></div>
+                        <div class="col-md-10"></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><input type="text" class="form-control" placeholder="Achternaam" value=""></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><input type="text" class="form-control" value="" placeholder="Voornaam"></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><input type="text" class="form-control" placeholder="Achternaam" value=""></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><input type="text" class="form-control" value="" placeholder="Voornaam"></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                        <div class="col-md-4"><label class="labels">Naam</label><input type="text" class="form-control" placeholder="Achternaam" value=""></div>
+                        <div class="col-md-4"><label class="labels">Voornaam</label><input type="text" class="form-control" value="" placeholder="Voornaam"></div>
+                        <div class="col-md-4"><label class="labels">Geboortedatum</label><input type="date" class="form-control" value="" placeholder="geboortedatum"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- User adres information -->
+                        <div class="col-md-12 mt-3"><h4>Adresgegevens</h4></div>
+                        <div class="col-md-6"><label class="labels">Straat</label><input type="text" class="form-control" placeholder="straat" value=""></div>
+                        <div class="col-md-6"><label class="labels">Huisnummer</label><input type="text" class="form-control" placeholder="nummer" value=""></div>
+                        <div class="col-md-6"><label class="labels">Stad</label><input type="text" class="form-control" placeholder="stad" value=""></div>
+                        <div class="col-md-6"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="postcode" value=""></div>
+                        <div class="col-md-6"><label class="labels">Land</label><input type="text" class="form-control" placeholder="Land" value=""></div>
+                        <div class="col-md-6"><label class="labels">Provincie</label><input type="text" class="form-control" value="" placeholder="provincie"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- User contact information -->
+                        <div class="col-md-12 mt-3"><h4>Contactgegevens</h4></div>
+                        <div class="col-md-12"><label class="labels">Gsm</label><input type="text" class="form-control" placeholder="voer uw GSM nummer in" value=""></div>
+                        <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email " value=""></div>
+                    </div>
+                        <!-- Save profile button -->
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" routerLink="/userpage" type="button">Bewaar gegevens</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+
+{
+    "user": [
+    {
+        "id": "",
+        "userDev":true,
+        "userPartner":false,
+        "user": "",
+        
+        "name": "",
+        "prename": "",
+        "dob":"",
+        
+        "parName":"",
+        "parPrename": "",
+        "parDob":"",
+        
+        "numberOfKids":"",
+        "kid1Name":"",
+        "kid1Prename": "",
+        "kid1Dob":"",
+
+        "userStreet": "",
+        "userNumber": "",
+        "userCity": "",
+        "userPostal": "",
+        "userCountry": "",
+        "userProvince": "",
+
+        "userGsm": "",
+        "userEmail": "",
+        
+        "comWebsite": ""
+
+
+    }]
+}

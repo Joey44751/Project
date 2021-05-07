@@ -1,0 +1,68 @@
+.container-fluid {
+    margin-top: 50px;
+
+}
+
+.navspace {
+    padding-right: 2rem !important;
+    padding-left: 0rem !important;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1) !important;
+	font-weight: 600 !important;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.bg-success {
+    background-color: #5F6D54!important;
+}
+
+.fakeimg {
+    height: 200px;
+    background: #5F6D54;
+}
+
+.name {
+    background-color: #DBE1D1;
+}
+
+.overview {
+    height: 400px;
+    background: #EB9782;
+}
+
+.background-playground {
+    height: 400px;
+    background: #9EC2FF;
+}
+
+.selected {
+    background: #7AD7F0;
+}
+
+.info {
+    background: #4259C3;
+}
+
+.description{
+    height: 400px;
+    background: #734b6d;
+}
+
+.short-info {
+    background: #516395;
+}
+
+.comments {
+    height: 400px;
+    background: #a770ef;
+}

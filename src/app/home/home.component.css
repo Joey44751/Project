@@ -1,0 +1,233 @@
+/* Top logo styling */
+.homeLogo{
+    width: 150px;
+    height:auto
+}
+.map{
+    max-width: 100%;
+}
+
+.info{
+    font-family: 'Rubik', sans-serif;
+    font-size:14px;
+    color: #DBE1D1;
+    text-align: center;
+  }
+  
+  /* Radio image button */
+  .radio_item{
+      display: none !important;
+      }
+      
+      .label_item {
+      opacity: 0.3;
+      width: 40px !important;
+      height: auto !important;
+      }
+      
+      .radio_item:checked + label {
+      opacity: 1;
+      }
+      .radioimg{
+      width: 40px !important;
+      height: auto !important;
+      }
+  
+  
+  
+       /* Size of playground radio buttens  */
+      #checksmall {
+          display: none
+        }
+        input#radio1:checked ~ #checksmall {
+          display: inline-block
+        }
+      #checkmedium {
+          display: none
+        }
+        input#radio2:checked ~ #checkmedium {
+          display: inline-block
+        }
+      #checklarge {
+          display: none
+        }
+        input#radio3:checked ~ #checklarge {
+          display: inline-block
+        }
+      #checkxlarge {
+          display: none
+        }
+        input#radio4:checked ~ #checkxlarge {
+          display: inline-block
+        }
+  
+  
+        /* Radio image button age */
+  .radio_age{
+    display: none !important;
+    }
+    
+    .label_age {
+    opacity: 0.3;
+    width: 40px !important;
+    height: auto !important;
+    }
+    
+    .radio_age:checked + label {
+    opacity: 1;
+    }
+    .radioimg{
+    width: 40px !important;
+    height: auto !important;
+    }
+  
+  
+         /* age of children radio buttens  */
+      #check03 {
+        display: none
+      }
+      input#age1:checked ~ #check03 {
+        display: inline-block
+      }
+    #check36 {
+        display: none
+      }
+      input#age2:checked ~ #check36 {
+        display: inline-block
+      }
+    #check69 {
+        display: none
+      }
+      input#age3:checked ~ #check69 {
+        display: inline-block
+      }
+    #check912 {
+        display: none
+      }
+      input#age4:checked ~ #check912 {
+        display: inline-block
+      }
+  
+  
+       /* Radio image button age */
+  .radio_price{
+    display: none !important;
+    }
+    
+    .label_price {
+    opacity: 0.3;
+    width: 40px !important;
+    height: auto !important;
+    }
+    
+    .radio_price:checked + label {
+    opacity: 1;
+    }
+    .radioimg{
+    width: 40px !important;
+    height: auto !important;
+    }
+  
+  
+          /* entry pricing radio buttens  */
+          #checkfree {
+            display: none
+          }
+          input#price1:checked ~ #checkfree {
+            display: inline-block
+          }
+        #checkcheap {
+            display: none
+          }
+          input#price2:checked ~ #checkcheap {
+            display: inline-block
+          }
+        #checknormal {
+            display: none
+          }
+          input#price3:checked ~ #checknormal {
+            display: inline-block
+          }
+        #checkexpensive {
+            display: none
+          }
+          input#price4:checked ~ #checkexpensive {
+            display: inline-block
+          }
+        #checkAdult {
+            display: none
+          }
+            input#price5:checked ~ #checkAdult {
+            display: inline-block
+          }
+  
+  
+  /* general information buttens  */
+    #checkfnb {
+    display: none
+    }
+    input#fnb:checked ~ #checkfnb {
+    display: inline-block
+    }
+    #checkfnbNear {
+      display: none
+      }
+      input#fnbNear:checked ~ #checkfnbNear {
+      display: inline-block
+      }
+    #checkPickNick {
+       display: none
+       }
+       input#pickNick:checked ~ #checkPickNick {
+       display: inline-block
+       }
+    #checkWc {
+    display: none
+        }
+        input#wc:checked ~ #checkWc {
+        display: inline-block
+        }
+   #checkCity {
+    display: none
+        }
+        input#city:checked ~ #checkCity {
+        display: inline-block
+        }
+   #checkField {
+    display: none
+        }
+        input#field:checked ~ #checkField {
+        display: inline-block
+        }
+   #checkForest {
+    display: none
+        }
+        input#forest:checked ~ #checkForest {
+        display: inline-block
+        }
+  /* .addPlayground {
+      background-color: #EB9782 !important;
+      min-height: 75px;
+      width: 200px;
+      border-radius:5%;
+  } */
+  .addPlayground{
+   font-size: 100px;
+   text-align: center;
+  }
+  .addPlayground:hover{
+    opacity: 0.3;
+    text-align: center;
+  }
+  #toevoegen{
+    display: none;
+    text-align: center;
+  }
+  .addPlayground:hover ~ #toevoegen{
+    display: inline;
+  }
+
+  #hmRate{
+    opacity: 0,3;
+  }
+
